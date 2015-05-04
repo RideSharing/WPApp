@@ -1,0 +1,266 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="urn:oasis:names:tc:xliff:document:1.2 xliff-core-1.2-transitional.xsd">
+  <file datatype="xml" source-language="en-US" target-language="qps-ploc" original="AppResources.resx" tool-id="MultilingualAppToolkit" product-name="RideSharingWPApp" product-version="1.0.0.0" build-num="0">
+    <header>
+      <tool tool-id="MultilingualAppToolkit" tool-name="Multilingual App Toolkit" tool-version="3.1.1250.0" tool-company="Microsoft" />
+    </header>
+    <body>
+      <group id="Resx">
+        <trans-unit id="Resx/ResourceFlowDirection" translate="yes" xml:space="preserve">
+          <source>LeftToRight</source>
+          <target state="translated">LeftToRight</target>
+          <note from="MultilingualBuild" annotates="source" priority="2">Controls the FlowDirection for all elements in the RootFrame. Set to the traditional direction of this resource file's language</note>
+          </trans-unit>
+        <trans-unit id="Resx/ResourceLanguage" translate="yes" xml:space="preserve">
+          <source>en-US</source>
+          <target state="translated">qps-ploc</target>
+          <note from="MultilingualBuild" annotates="source" priority="2">Controls the Language and ensures that the font for all elements in the RootFrame aligns with the app's language. Set to the language code of this resource file's language.</note>
+          </trans-unit>
+        <trans-unit id="Resx/ApplicationTitle" translate="yes" xml:space="preserve">
+          <source>my application</source>
+          <target state="new">my application</target>
+        </trans-unit>
+        <trans-unit id="Resx/SampleProperty" translate="yes" xml:space="preserve">
+          <source>Sample Runtime Property Value</source>
+          <target state="new">Sample Runtime Property Value</target>
+        </trans-unit>
+        <trans-unit id="Resx/btnRegister" translate="yes" xml:space="preserve">
+          <source>Register</source>
+          <target state="new">Register</target>
+        </trans-unit>
+        <trans-unit id="Resx/btnLogin" translate="yes" xml:space="preserve">
+          <source>Login</source>
+          <target state="new">Login</target>
+        </trans-unit>
+        <trans-unit id="Resx/displayMessage" translate="yes" xml:space="preserve">
+          <source>This sample assumes that people above 18 years of age are eligible to vote.</source>
+          <target state="new">This sample assumes that people above 18 years of age are eligible to vote.</target>
+        </trans-unit>
+        <trans-unit id="Resx/slogan" translate="yes" xml:space="preserve">
+          <source>Ride Sharing- Your Happiness moment</source>
+          <target state="new">Ride Sharing- Your Happiness moment</target>
+        </trans-unit>
+        <trans-unit id="Resx/hyperlinkForgotPass" translate="yes" xml:space="preserve">
+          <source>Forgot password</source>
+          <target state="new">Forgot password</target>
+        </trans-unit>
+        <trans-unit id="Resx/hintInputPass" translate="yes" xml:space="preserve">
+          <source>Your password...</source>
+          <target state="new">Your password...</target>
+        </trans-unit>
+        <trans-unit id="Resx/hintInputEmail" translate="yes" xml:space="preserve">
+          <source>Your email...</source>
+          <target state="new">Your email...</target>
+        </trans-unit>
+        <trans-unit id="Resx/tracking" translate="yes" xml:space="preserve">
+          <source>Tracking</source>
+          <target state="new">Tracking</target>
+        </trans-unit>
+        <trans-unit id="Resx/txtPhone" translate="yes" xml:space="preserve">
+          <source>Phone</source>
+          <target state="new">Phone</target>
+        </trans-unit>
+        <trans-unit id="Resx/hintDistance" translate="yes" xml:space="preserve">
+          <source>Distance...</source>
+          <target state="new">Distance...</target>
+        </trans-unit>
+        <trans-unit id="Resx/hintDestination" translate="yes" xml:space="preserve">
+          <source>Destination point....</source>
+          <target state="new">Destination point....</target>
+        </trans-unit>
+        <trans-unit id="Resx/hintDeparture" translate="yes" xml:space="preserve">
+          <source>Departure point...</source>
+          <target state="new">Departure point...</target>
+        </trans-unit>
+        <trans-unit id="Resx/hintDescription" translate="yes" xml:space="preserve">
+          <source>Itinerary description...</source>
+          <target state="new">Itinerary description...</target>
+        </trans-unit>
+        <trans-unit id="Resx/headerStartingTime" translate="yes" xml:space="preserve">
+          <source>Starting time</source>
+          <target state="new">Starting time</target>
+        </trans-unit>
+        <trans-unit id="Resx/hintCost" translate="yes" xml:space="preserve">
+          <source>Cost...</source>
+          <target state="new">Cost...</target>
+        </trans-unit>
+        <trans-unit id="Resx/headerStartingDay" translate="yes" xml:space="preserve">
+          <source>Starting day</source>
+          <target state="new">Starting day</target>
+        </trans-unit>
+        <trans-unit id="Resx/sendPassword" translate="yes" xml:space="preserve">
+          <source>Sending password for this email</source>
+          <target state="new">Sending password for this email</target>
+        </trans-unit>
+        <trans-unit id="Resx/title" translate="yes" xml:space="preserve">
+          <source>Ride Sharing </source>
+          <target state="new">Ride Sharing </target>
+        </trans-unit>
+        <trans-unit id="Resx/vehicleInfor" translate="yes" xml:space="preserve">
+          <source>Vehicle information</source>
+          <target state="new">Vehicle information</target>
+        </trans-unit>
+        <trans-unit id="Resx/vehicleType" translate="yes" xml:space="preserve">
+          <source>Vehicle type:</source>
+          <target state="new">Vehicle type:</target>
+        </trans-unit>
+        <trans-unit id="Resx/registrationCertificateImg" translate="yes" xml:space="preserve">
+          <source>Motor's registration certificate</source>
+          <target state="new">Motor's registration certificate</target>
+        </trans-unit>
+        <trans-unit id="Resx/contactUs" translate="yes" xml:space="preserve">
+          <source>Contact:</source>
+          <target state="new">Contact:</target>
+        </trans-unit>
+        <trans-unit id="Resx/feedback" translate="yes" xml:space="preserve">
+          <source>Feedbacks </source>
+          <target state="new">Feedbacks </target>
+        </trans-unit>
+        <trans-unit id="Resx/infor4" translate="yes" xml:space="preserve">
+          <source>Mobile: 0975417597</source>
+          <target state="new">Mobile: 0975417597</target>
+        </trans-unit>
+        <trans-unit id="Resx/btnAccept" translate="yes" xml:space="preserve">
+          <source>Accept </source>
+          <target state="new">Accept </target>
+        </trans-unit>
+        <trans-unit id="Resx/headerFinished" translate="yes" xml:space="preserve">
+          <source>Finished</source>
+          <target state="new">Finished</target>
+        </trans-unit>
+        <trans-unit id="Resx/headerMap" translate="yes" xml:space="preserve">
+          <source>Map</source>
+          <target state="new">Map</target>
+        </trans-unit>
+        <trans-unit id="Resx/headerInfor" translate="yes" xml:space="preserve">
+          <source>Information</source>
+          <target state="new">Information</target>
+        </trans-unit>
+        <trans-unit id="Resx/headerList" translate="yes" xml:space="preserve">
+          <source>List intinerary</source>
+          <target state="new">List intinerary</target>
+        </trans-unit>
+        <trans-unit id="Resx/headerCustomer" translate="yes" xml:space="preserve">
+          <source>Customer</source>
+          <target state="new">Customer</target>
+        </trans-unit>
+        <trans-unit id="Resx/headerAccepted" translate="yes" xml:space="preserve">
+          <source>Accepted</source>
+          <target state="new">Accepted</target>
+        </trans-unit>
+        <trans-unit id="Resx/itineraryDescription" translate="yes" xml:space="preserve">
+          <source>Itinerary description:</source>
+          <target state="new">Itinerary description:</target>
+        </trans-unit>
+        <trans-unit id="Resx/txtTimeCompleted" translate="yes" xml:space="preserve">
+          <source>The time completed:</source>
+          <target state="new">The time completed:</target>
+        </trans-unit>
+        <trans-unit id="Resx/headerCreated" translate="yes" xml:space="preserve">
+          <source>Created</source>
+          <target state="new">Created</target>
+        </trans-unit>
+        <trans-unit id="Resx/txtStartingDay" translate="yes" xml:space="preserve">
+          <source>Starting day :</source>
+          <target state="new">Starting day :</target>
+        </trans-unit>
+        <trans-unit id="Resx/txtDistance" translate="yes" xml:space="preserve">
+          <source>Distance (km) :</source>
+          <target state="new">Distance (km) :</target>
+        </trans-unit>
+        <trans-unit id="Resx/txtDestinationPoint" translate="yes" xml:space="preserve">
+          <source>Destination point :</source>
+          <target state="new">Destination point :</target>
+        </trans-unit>
+        <trans-unit id="Resx/txtDeparturePoint" translate="yes" xml:space="preserve">
+          <source>Departure point :</source>
+          <target state="new">Departure point :</target>
+        </trans-unit>
+        <trans-unit id="Resx/txtCost" translate="yes" xml:space="preserve">
+          <source>Cost (VND) :</source>
+          <target state="new">Cost (VND) :</target>
+        </trans-unit>
+        <trans-unit id="Resx/infor3" translate="yes" xml:space="preserve">
+          <source>Office: 453-455 Hoang Dieu, Danang</source>
+          <target state="new">Office: 453-455 Hoang Dieu, Danang</target>
+        </trans-unit>
+        <trans-unit id="Resx/infor2" translate="yes" xml:space="preserve">
+          <source>Integrated in multi-platform : WP, Android and Web</source>
+          <target state="new">Integrated in multi-platform : WP, Android and Web</target>
+        </trans-unit>
+        <trans-unit id="Resx/infor1" translate="yes" xml:space="preserve">
+          <source>Developed by Ride Sharing team</source>
+          <target state="new">Developed by Ride Sharing team</target>
+        </trans-unit>
+        <trans-unit id="Resx/basicInfo" translate="yes" xml:space="preserve">
+          <source> Basic informatiion:</source>
+          <target state="new"> Basic informatiion:</target>
+        </trans-unit>
+        <trans-unit id="Resx/contact4" translate="yes" xml:space="preserve">
+          <source>YouTube:youtube.com/ridesharing</source>
+          <target state="new">YouTube:youtube.com/ridesharing</target>
+        </trans-unit>
+        <trans-unit id="Resx/contact3" translate="yes" xml:space="preserve">
+          <source>Google Plus:googleplus.com/ridesharing</source>
+          <target state="new">Google Plus:googleplus.com/ridesharing</target>
+        </trans-unit>
+        <trans-unit id="Resx/contact2" translate="yes" xml:space="preserve">
+          <source>Gmail:ridesharing@gmail.com</source>
+          <target state="new">Gmail:ridesharing@gmail.com</target>
+        </trans-unit>
+        <trans-unit id="Resx/contact1" translate="yes" xml:space="preserve">
+          <source>FaceBook: facebook.com/ridesharing</source>
+          <target state="new">FaceBook: facebook.com/ridesharing</target>
+        </trans-unit>
+        <trans-unit id="Resx/authors" translate="yes" xml:space="preserve">
+          <source>Authors:</source>
+          <target state="new">Authors:</target>
+        </trans-unit>
+        <trans-unit id="Resx/vehiclePlateNum" translate="yes" xml:space="preserve">
+          <source>Vehicle plate number:</source>
+          <target state="new">Vehicle plate number:</target>
+        </trans-unit>
+        <trans-unit id="Resx/vehicleImg" translate="yes" xml:space="preserve">
+          <source>Vehicle photo</source>
+          <target state="new">Vehicle photo</target>
+        </trans-unit>
+        <trans-unit id="Resx/motorInsuranceImg" translate="yes" xml:space="preserve">
+          <source>Motor insurance's photo</source>
+          <target state="new">Motor insurance's photo</target>
+        </trans-unit>
+        <trans-unit id="Resx/licensePlateImg" translate="yes" xml:space="preserve">
+          <source>Lencense plate's photo</source>
+          <target state="new">Lencense plate's photo</target>
+        </trans-unit>
+        <trans-unit id="Resx/passwordAlready" translate="yes" xml:space="preserve">
+          <source>Have password. Log in now!</source>
+          <target state="new">Have password. Log in now!</target>
+        </trans-unit>
+        <trans-unit id="Resx/txtPersonalID" translate="yes" xml:space="preserve">
+          <source>Personal ID</source>
+          <target state="new">Personal ID</target>
+        </trans-unit>
+        <trans-unit id="Resx/txtEmail" translate="yes" xml:space="preserve">
+          <source>Email</source>
+          <target state="new">Email</target>
+        </trans-unit>
+        <trans-unit id="Resx/driverLincensePhoto" translate="yes" xml:space="preserve">
+          <source>Driver Lincense's photo</source>
+          <target state="new">Driver Lincense's photo</target>
+        </trans-unit>
+        <trans-unit id="Resx/driverLicense" translate="yes" xml:space="preserve">
+          <source>Driver's License</source>
+          <target state="new">Driver's License</target>
+        </trans-unit>
+        <trans-unit id="Resx/driverInformation" translate="yes" xml:space="preserve">
+          <source>Driver's Information</source>
+          <target state="new">Driver's Information</target>
+        </trans-unit>
+        <trans-unit id="Resx/btnChangePass" translate="yes" xml:space="preserve">
+          <source>Change Password</source>
+          <target state="new">Change Password</target>
+        </trans-unit>
+      </group>
+    </body>
+  </file>
+</xliff>
