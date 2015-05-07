@@ -11,8 +11,8 @@ namespace RideSharingWPApp.Request
     class RequestToServer
     {
         //public static string preServiceURI = "http://localhost/SeniorProject/RESTFul/v1/";
-        //public static string preServiceURI = "http://192.168.10.132/RESTFul/v1/";
-        public static string preServiceURI = "http://52.11.206.209/RESTFul/v1/";
+        public static string preServiceURI = "http://192.168.10.132/RESTFul/v1/";
+        //public static string preServiceURI = "http://52.11.206.209/RESTFul/v1/";
         //public static string preServiceURI = "http://54.68.126.75/RESTFul/v1/";
         
 
@@ -27,8 +27,8 @@ namespace RideSharingWPApp.Request
             HttpRequestMessage request = new HttpRequestMessage();
             request.Method = HttpMethod.Get;
             request.RequestUri = new Uri(ServiceURI);
-            request.Headers.Authorization = Windows.Web.Http.Headers.HttpCredentialsHeaderValue.Parse(Global.GlobalData.APIkey);
-
+            //request.Headers.Authorization = Windows.Web.Http.Headers.HttpCredentialsHeaderValue.Parse(Global.GlobalData.APIkey);
+            request.Headers.Authorization = Windows.Web.Http.Headers.HttpCredentialsHeaderValue.Parse("ce1fb637b7eee845c73b207d931bbc10");
             HttpResponseMessage response = await httpClient.SendRequestAsync(request);
             string returnString = await response.Content.ReadAsStringAsync();
             response.Dispose();

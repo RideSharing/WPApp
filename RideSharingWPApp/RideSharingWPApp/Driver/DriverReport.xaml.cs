@@ -23,12 +23,18 @@ namespace RideSharingWPApp.Driver
         public DriverReport()
         {
             InitializeComponent();
+
+            getCustomerMoneyData();
+
+            getCustomerItineraryData();
+
+            getFinishedItinerariesOfCustomer();
         }
 
         //get customer money chart 
         public async void getCustomerMoneyData()
         {
-            var result = await Request.RequestToServer.sendGetRequest("statistic_customer/total_money");
+            var result = await Request.RequestToServer.sendGetRequest("statistic_driver/total_money");
 
             RootStat root = JsonConvert.DeserializeObject<RootStat>(result);
 
@@ -44,7 +50,7 @@ namespace RideSharingWPApp.Driver
         //get customer itinerary chart 
         public async void getCustomerItineraryData()
         {
-            var result = await Request.RequestToServer.sendGetRequest("statistic_customer/itinerary");
+            var result = await Request.RequestToServer.sendGetRequest("statistic_driver/itinerary");
 
             RootStat root = JsonConvert.DeserializeObject<RootStat>(result);
 
@@ -62,7 +68,7 @@ namespace RideSharingWPApp.Driver
             //reset Itinerary
             Global.GlobalData.itinearyList = new ItineraryList();
             //send get request
-            var result = await Request.RequestToServer.sendGetRequest("itineraries/customer/itinerary_status");
+            var result = await Request.RequestToServer.sendGetRequest("itineraries/driver/itinerary_status");
 
             RootObject root = JsonConvert.DeserializeObject<RootObject>(result);
 
@@ -164,7 +170,7 @@ namespace RideSharingWPApp.Driver
             //luu tru tam thoi
             Global.GlobalData.selectedItinerary = selectedItem;
             //navigate sang details
-            NavigationService.Navigate(new Uri("/Customer/ItineraryDetails.xaml", UriKind.RelativeOrAbsolute));
+            NavigationService.Navigate(new Uri("/Driver/ItineraryDetails.xaml", UriKind.RelativeOrAbsolute));
         }
     }
 }
