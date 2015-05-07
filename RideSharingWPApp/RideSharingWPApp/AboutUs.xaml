@@ -44,33 +44,75 @@
             <Image Source="Assets/avatar/ic_logo.png" Height="100"/>
             <TextBlock HorizontalAlignment="Center" Text="{Binding Path=LocalizedResources.slogan, Source={StaticResource LocalizedStrings}}" Height="50" FontWeight="Bold"/>
         </StackPanel>
+        <Grid Grid.Row="2">
 
-        <StackPanel Grid.Row="2" Height="Auto" Background="White" Margin="0,0,0,3">
-            <TextBlock HorizontalAlignment="Left" Text="{Binding Path=LocalizedResources.basicInfo, Source={StaticResource LocalizedStrings}}" Foreground="#FF0C0B0B" FontWeight="Bold" />
-            <TextBlock Text="{Binding Path=LocalizedResources.infor1, Source={StaticResource LocalizedStrings}}" Foreground="Black" />
-            <TextBlock Text="{Binding Path=LocalizedResources.infor2, Source={StaticResource LocalizedStrings}}" Foreground="Black" />
-            <TextBlock Text="{Binding Path=LocalizedResources.infor3, Source={StaticResource LocalizedStrings}}" Foreground="Black" />
-            <TextBlock Text="{Binding Path=LocalizedResources.infor4, Source={StaticResource LocalizedStrings}}" Foreground="Black" />
+        </Grid>
+
+        <StackPanel Grid.Row="2" Height="Auto" Background="White" Margin="0,0,0,3" >
+
+            <TextBlock HorizontalAlignment="Left" Text="{Binding LocalizedResources.basicInfo, Source={StaticResource LocalizedStrings}}" Foreground="#FF0C0B0B" FontWeight="Bold" />
+            <TextBlock Text="{Binding LocalizedResources.infor1, Source={StaticResource LocalizedStrings}}" Foreground="Black" />
+            <TextBlock Text="{Binding LocalizedResources.infor2, Source={StaticResource LocalizedStrings}}" Foreground="Black" />
+            <TextBlock Text="{Binding LocalizedResources.infor3, Source={StaticResource LocalizedStrings}}" Foreground="Black" />
+            <TextBlock Text="{Binding LocalizedResources.infor4, Source={StaticResource LocalizedStrings}}" Foreground="Black" />
         </StackPanel>
+        <Grid Grid.Row="3" Background="White" Margin="0,0,0,3">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+            </Grid.RowDefinitions>
+            <TextBlock Grid.Row="0" Foreground="Black" Text="{Binding Path=LocalizedResources.contactUs, Source={StaticResource LocalizedStrings}}" FontWeight="Bold"/>
+            <Grid Grid.Row="1">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="9*"/>
+                </Grid.ColumnDefinitions>
+                <Image Grid.Column="0" Source="/Assets/ic_acc/ic_face.png"/>
+                <TextBlock Grid.Column="1" Text="{Binding Path=LocalizedResources.contact1, Source={StaticResource LocalizedStrings}}" HorizontalAlignment="Left" Foreground="#FF0C0B0B"/>
+            </Grid>
+            <Grid Grid.Row="2">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="9*"/>
+                </Grid.ColumnDefinitions>
+                <Image Grid.Column="0" Source="/Assets/ic_acc/ic_gmail.png"/>
+                <TextBlock Grid.Column="1" Text="{Binding Path=LocalizedResources.contact2, Source={StaticResource LocalizedStrings}}" HorizontalAlignment="Left" Foreground="#FF0C0B0B"/>
+            </Grid>
+            <Grid Grid.Row="3">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="48*"/>
+                    <ColumnDefinition Width="170*"/>
+                    <ColumnDefinition Width="263*"/>
+                </Grid.ColumnDefinitions>
+                <Image Grid.Column="0" Source="/Assets/ic_acc/ic_youtube.png"/>
+                <TextBlock Grid.Column="1" Text="{Binding Path=LocalizedResources.contact4, Source={StaticResource LocalizedStrings}}" HorizontalAlignment="Left" Foreground="#FF0C0B0B"  Grid.ColumnSpan="2" />
+            </Grid>
+            <Grid Grid.Row="4">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="9*"/>
+                </Grid.ColumnDefinitions>
+                <Image Grid.Column="0" Source="/Assets/ic_acc/ic_google+.png"/>
+                <TextBlock Grid.Column="1" Text="{Binding Path=LocalizedResources.contact3, Source={StaticResource LocalizedStrings}}" HorizontalAlignment="Left" Foreground="#FF0C0B0B"/>
+            </Grid>         
+        </Grid>
 
-        <StackPanel Grid.Row="3" Height="Auto" Background="White" Margin="0,0,0,7">
-            <TextBlock Text="{Binding Path=LocalizedResources.contactUs, Source={StaticResource LocalizedStrings}}" HorizontalAlignment="Left" Foreground="#FF0C0B0B" FontWeight="Bold" >  
-            </TextBlock>
-            <TextBlock Text="{Binding Path=LocalizedResources.contact1, Source={StaticResource LocalizedStrings}}" Foreground="#FF1546EE" FontWeight="Bold" />
+        <!-- <StackPanel Grid.Row="3" Height="Auto" Background="White" Margin="0,0,0,7">
+            <TextBlock Text="{Binding Path=LocalizedResources.contactUs, Source={StaticResource LocalizedStrings}}" HorizontalAlignment="Left" Foreground="#FF0C0B0B" FontWeight="Bold" />
+            <TextBlock  Text="{Binding Path=LocalizedResources.contact1, Source={StaticResource LocalizedStrings}}" Foreground="#FF1546EE" FontWeight="Bold" />
             <TextBlock Text="{Binding Path=LocalizedResources.contact2, Source={StaticResource LocalizedStrings}}" Foreground="#FFAC0909" FontWeight="Bold" />
             <TextBlock Text="{Binding Path=LocalizedResources.contact3, Source={StaticResource LocalizedStrings}}" Foreground="#FF094EE4" FontWeight="Bold" />
             <TextBlock Text="{Binding Path=LocalizedResources.contact4, Source={StaticResource LocalizedStrings}}" Foreground="#FFB40B0B" FontWeight="Bold" />
-        </StackPanel>
+        </StackPanel>-->
 
-        <Grid Grid.Row="4" Margin="0,0,0,9" Background="#FF3DA5E1">
-            <Grid.ColumnDefinitions>
-                <ColumnDefinition Width="11*"/>
-                <ColumnDefinition Width="5*"/>
-            </Grid.ColumnDefinitions>
-            <TextBlock  HorizontalAlignment="Left" Text="{Binding Path=LocalizedResources.authors, Source={StaticResource LocalizedStrings}}" Foreground="Black" Grid.ColumnSpan="2" Margin="0,0,0,0" FontWeight="Bold"/>
+        <Grid Grid.Row="4" Background="White">
+            <TextBlock HorizontalAlignment="Left" Text="{Binding Path=LocalizedResources.authors, Source={StaticResource LocalizedStrings}}" Foreground="Black" Margin="0,0,0,0" FontWeight="Bold"/>
         </Grid>
 
-        <Grid Grid.Row="5">
+        <Grid Grid.Row="5" Background="White">
 
             <Grid.ColumnDefinitions>
                 <ColumnDefinition Width="*"/>
@@ -85,17 +127,17 @@
 
             </Grid.RowDefinitions>
             <Image Source="Assets/avatar/ic_author_terry.png" Grid.Row="0" Grid.Column="0" />
-            <TextBlock HorizontalAlignment="Center" Text="Trần Duy Thành" Grid.Row="1" Grid.Column="0" FontSize="16"/>
+            <TextBlock Foreground="Black" HorizontalAlignment="Center" Text="Trần Duy Thành" Grid.Row="1" Grid.Column="0" FontSize="16"/>
             <Image Source="Assets/avatar/ic_author_cody.png" Grid.Row="2" Grid.Column="0" />
-            <TextBlock HorizontalAlignment="Center" Text="Nguyễn Nhật Cường" Grid.Row="3" Grid.Column="0" FontSize="16"/>
+            <TextBlock Foreground="Black" HorizontalAlignment="Center" Text="Nguyễn Nhật Cường" Grid.Row="3" Grid.Column="0" FontSize="16"/>
             <Image Source="Assets/avatar/ic_author_hanley.png" Grid.Row="2" Grid.Column="1" />
-            <TextBlock HorizontalAlignment="Center" Text="Bùi Quang Huy" Grid.Row="1" Grid.Column="1" FontSize="16"/>
+            <TextBlock Foreground="Black" HorizontalAlignment="Center" Text="Bùi Quang Huy" Grid.Row="1" Grid.Column="1" FontSize="16"/>
             <Image Source="Assets/avatar/ic_author_harold.png" Grid.Row="0" Grid.Column="1" />
-            <TextBlock HorizontalAlignment="Center" Text="Nguyễn T.T Hoàng" Grid.Row="3" Grid.Column="1" FontSize="16"/>
+            <TextBlock Foreground="Black" HorizontalAlignment="Center" Text="Nguyễn T.T Hoàng" Grid.Row="3" Grid.Column="1" FontSize="16"/>
             <Image Source="Assets/avatar/ic_author_vidal.png" Grid.Row="0" Grid.Column="2" />
-            <TextBlock HorizontalAlignment="Center" Text="Lê Trung Vĩ" Grid.Row="1" Grid.Column="3" FontSize="16"/>
+            <TextBlock Foreground="Black" HorizontalAlignment="Center" Text="Lê Trung Vĩ" Grid.Row="1" Grid.Column="3" FontSize="16"/>
             <Image Source="Assets/avatar/ic_author_truman.png" Grid.Row="2" Grid.Column="2" />
-            <TextBlock HorizontalAlignment="Center" Text="Nguyễn Quang Trung" Grid.Row="3" Grid.Column="3" FontSize="16"/>
+            <TextBlock Foreground="Black" HorizontalAlignment="Center" Text="Nguyễn Quang Trung" Grid.Row="3" Grid.Column="3" FontSize="16"/>
 
         </Grid>
 

@@ -79,7 +79,7 @@ namespace RideSharingWPApp.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to  Basic informatiion:.
+        ///   Looks up a localized string similar to Basic informatiion:.
         /// </summary>
         public static string basicInfo {
             get {
@@ -291,6 +291,15 @@ namespace RideSharingWPApp.Resources {
         public static string headerStartingTime {
             get {
                 return ResourceManager.GetString("headerStartingTime", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Vehicle.
+        /// </summary>
+        public static string headerVehicle {
+            get {
+                return ResourceManager.GetString("headerVehicle", resourceCulture);
             }
         }
         

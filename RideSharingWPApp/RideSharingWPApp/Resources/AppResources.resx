@@ -231,7 +231,7 @@
     <value>Authors:</value>
   </data>
   <data name="basicInfo" xml:space="preserve">
-    <value> Basic informatiion:</value>
+    <value>Basic informatiion:</value>
   </data>
   <data name="contact1" xml:space="preserve">
     <value>FaceBook: facebook.com/ridesharing</value>
@@ -307,5 +307,8 @@
   </data>
   <data name="headerCreated" xml:space="preserve">
     <value>Created</value>
+  </data>
+  <data name="headerVehicle" xml:space="preserve">
+    <value>Vehicle</value>
   </data>
 </root>

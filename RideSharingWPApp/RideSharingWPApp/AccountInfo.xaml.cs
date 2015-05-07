@@ -149,7 +149,7 @@ namespace RideSharingWPApp
             postData.Add("phone", phone);
 
             postData.Add("link_avatar", ImageConvert.ImageConvert.convertImageToBase64(imgAvatar));
-            postData.Add("personalID_img", ImageConvert.ImageConvert.convertImageToBase64(imgAvatar));
+            postData.Add("personalID_img", ImageConvert.ImageConvert.convertImageToBase64(imgPersonalID));
 
             HttpFormUrlEncodedContent content =
                 new HttpFormUrlEncodedContent(postData);
@@ -184,6 +184,7 @@ namespace RideSharingWPApp
                 string str = ImageConvert.ImageConvert.convertImageToBase64(myImgage);
 
                 imgAvatar.Source = ImageConvert.ImageConvert.convertBase64ToImage(str);
+                
                 //MessageBox.Show(str);
             }
         }
@@ -220,6 +221,8 @@ namespace RideSharingWPApp
                 string str = ImageConvert.ImageConvert.convertImageToBase64(myImgage);
 
                 imgAvatar.Source = ImageConvert.ImageConvert.convertBase64ToImage(str);
+
+                //updateUserInfo(txtbFullname.Text, txtbEmail.Text, txtbPersonalID.Text, txtbPhone.Text);
             }
         }
 

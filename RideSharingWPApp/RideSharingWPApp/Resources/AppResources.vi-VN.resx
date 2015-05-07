@@ -281,6 +281,7 @@
   </data>
   <data name="basicInfo" xml:space="preserve">
     <value> Thông tin cơ bản:</value>
+    <comment></comment>
   </data>
   <data name="contact4" xml:space="preserve">
     <value>YouTube:youtube.com/ridesharing</value>

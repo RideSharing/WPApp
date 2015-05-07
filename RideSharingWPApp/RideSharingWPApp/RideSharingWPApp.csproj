@@ -340,10 +340,14 @@
     <Content Include="Assets\ic_acc\email-blue-icon.png" />
     <Content Include="Assets\ic_acc\ic_driver_license .jpg" />
     <Content Include="Assets\ic_acc\ic_edit.png" />
+    <Content Include="Assets\ic_acc\ic_face.png" />
+    <Content Include="Assets\ic_acc\ic_gmail.png" />
+    <Content Include="Assets\ic_acc\ic_google+.png" />
     <Content Include="Assets\ic_acc\ic_image2.png" />
     <Content Include="Assets\avatar\ic_personalID.jpg" />
     <Content Include="Assets\ic_acc\ic_MotorPlate.png" />
     <Content Include="Assets\ic_acc\ic_upload.png" />
+    <Content Include="Assets\ic_acc\ic_youtube.png" />
     <Content Include="Assets\ic_acc\Personal.png" />
     <Content Include="Assets\ic_acc\phone.png" />
     <Content Include="Assets\ic_acc\Postcard.png" />

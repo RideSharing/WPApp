@@ -160,6 +160,10 @@
           <source>Created</source>
           <target state="new">Created</target>
         </trans-unit>
+        <trans-unit id="Resx/headerVehicle" translate="yes" xml:space="preserve">
+          <source>Vehicle</source>
+          <target state="new">Vehicle</target>
+        </trans-unit>
         <trans-unit id="Resx/txtStartingDay" translate="yes" xml:space="preserve">
           <source>Starting day :</source>
           <target state="new">Starting day :</target>
@@ -193,8 +197,8 @@
           <target state="new">Developed by Ride Sharing team</target>
         </trans-unit>
         <trans-unit id="Resx/basicInfo" translate="yes" xml:space="preserve">
-          <source> Basic informatiion:</source>
-          <target state="new"> Basic informatiion:</target>
+          <source>Basic informatiion:</source>
+          <target state="new">Basic informatiion:</target>
         </trans-unit>
         <trans-unit id="Resx/contact4" translate="yes" xml:space="preserve">
           <source>YouTube:youtube.com/ridesharing</source>

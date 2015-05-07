@@ -160,6 +160,10 @@
           <source>Created</source>
           <target state="translated" state-qualifier="tm-suggestion">Đã tạo</target>
         </trans-unit>
+        <trans-unit id="Resx/headerVehicle" translate="yes" xml:space="preserve">
+          <source>Vehicle</source>
+          <target state="new">Vehicle</target>
+        </trans-unit>
         <trans-unit id="Resx/txtStartingDay" translate="yes" xml:space="preserve">
           <source>Starting day :</source>
           <target state="needs-review-translation" state-qualifier="mt-suggestion">Bắt đầu từ ngày:</target>
@@ -193,8 +197,8 @@
           <target state="translated">Phát triển bởi nhóm Ride Sharing</target>
         </trans-unit>
         <trans-unit id="Resx/basicInfo" translate="yes" xml:space="preserve">
-          <source> Basic informatiion:</source>
-          <target state="translated"> Thông tin cơ bản:</target>
+          <source>Basic informatiion:</source>
+          <target state="needs-review-translation"> Thông tin cơ bản:</target><note from="MultilingualUpdate" priority="2" annotates="source">Please verify the translation’s accuracy as the source string was updated after it was translated.</note>
         </trans-unit>
         <trans-unit id="Resx/contact4" translate="yes" xml:space="preserve">
           <source>YouTube:youtube.com/ridesharing</source>
