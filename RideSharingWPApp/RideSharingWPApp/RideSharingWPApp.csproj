@@ -102,6 +102,9 @@
     <Compile Include="Customer\CustomerItineraryManagement.xaml.cs">
       <DependentUpon>CustomerItineraryManagement.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Customer\CustomerReport.xaml.cs">
+      <DependentUpon>CustomerReport.xaml</DependentUpon>
+    </Compile>
     <Compile Include="DateTimes\DatetimeConvert.cs" />
     <Compile Include="Driver\AdvancePostItinerary.xaml.cs">
       <DependentUpon>AdvancePostItinerary.xaml</DependentUpon>
@@ -114,6 +117,9 @@
     </Compile>
     <Compile Include="Driver\DriverMainMap.xaml.cs">
       <DependentUpon>DriverMainMap.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Driver\DriverReport.xaml.cs">
+      <DependentUpon>DriverReport.xaml</DependentUpon>
     </Compile>
     <Compile Include="Driver\VehicleDetails.xaml.cs">
       <DependentUpon>VehicleDetails.xaml</DependentUpon>
@@ -207,6 +213,10 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
+    <Page Include="Customer\CustomerReport.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="Driver\AdvancePostItinerary.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
@@ -220,6 +230,10 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="Driver\DriverMainMap.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Driver\DriverReport.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

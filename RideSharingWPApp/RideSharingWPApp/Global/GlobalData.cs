@@ -49,4 +49,16 @@ namespace RideSharingWPApp.Global
 
         }
     }
+
+    public class Stat
+    {
+        public string month { get; set; }
+        public int number { get; set; }
+    }
+
+    public class RootStat
+    {
+        public bool error { get; set; }
+        public List<Stat> stats { get; set; }
+    }
 }

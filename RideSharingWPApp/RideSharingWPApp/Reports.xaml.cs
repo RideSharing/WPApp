@@ -73,12 +73,6 @@ namespace RideSharingWPApp
         }
 
 
-
-
-
-
-
-
         public async void getChartInfo()
         {
             var result = await RequestToServer.sendGetRequest("user");
