@@ -14,54 +14,54 @@
 	SupportedOrientations="Portrait"  Orientation="Portrait"
 	shell:SystemTray.IsVisible="True">
 
-    <phone:PhoneApplicationPage.ApplicationBar>
-        <shell:ApplicationBar IsVisible="True" IsMenuEnabled="True" BackgroundColor="#3DA5E1">
+	<phone:PhoneApplicationPage.ApplicationBar>
+		<shell:ApplicationBar IsVisible="True" IsMenuEnabled="True" BackgroundColor="#3DA5E1">
 
-            <shell:ApplicationBar.MenuItems>
-                <shell:ApplicationBarMenuItem 
+			<shell:ApplicationBar.MenuItems>
+				<shell:ApplicationBarMenuItem 
 					x:Name="menuAccountInfo" 
 					Text="Account Info"
 					Click="menuAccountInfo_Click"/>
-                <shell:ApplicationBarMenuItem 
+				<shell:ApplicationBarMenuItem 
 					x:Name="menuSwitchRole" 
 					Text="Switch Role"
 					Click="menuSwitchRole_Click"/>
-                <shell:ApplicationBarMenuItem 
+				<shell:ApplicationBarMenuItem 
 					x:Name="menuAboutUs" 
 					Text="About Us"
 					Click="menuAboutUs_Click"/>
-                <shell:ApplicationBarMenuItem 
+				<shell:ApplicationBarMenuItem 
 					x:Name="menuLogOut" 
 					Text="Log Out"
 					Click="menuLogOut_Click"/>
-            </shell:ApplicationBar.MenuItems>
+			</shell:ApplicationBar.MenuItems>
 
-            <shell:ApplicationBarIconButton
+			<shell:ApplicationBarIconButton
 				x:Name="menuHome"
 				IconUri="/Assets/AppBar/ic_home.png"  
 				Text="Home" 
 				Click="menuHome_Click"/>
 
-            <shell:ApplicationBarIconButton 
+			<shell:ApplicationBarIconButton 
 				x:Name="menuSearch"
 				IconUri="/Assets/AppBar/ic_search.png"  
 				Text="Search" 
 				Click="menuSearch_Click"/>
 
-            <shell:ApplicationBarIconButton
+			<shell:ApplicationBarIconButton
 				x:Name="menuPostItinerary"
 				IconUri="/Assets/AppBar/ic_map.png" 
 				Text="Post" 
 				Click="menuPostItinerary_Click"/>
 
-            <shell:ApplicationBarIconButton 
+			<shell:ApplicationBarIconButton 
 				x:Name="menuItineraryManagement"
 				IconUri="/Assets/AppBar/ic_ItiMana.png" 
 				Text="Manage"
 				Click="menuItineraryManagement_Click"/>
 
-        </shell:ApplicationBar>
-    </phone:PhoneApplicationPage.ApplicationBar>
+		</shell:ApplicationBar>
+	</phone:PhoneApplicationPage.ApplicationBar>
 
  <!--   <bar:Bindable.ApplicationBar>
 		<bar:BindableApplicationBar>
@@ -88,7 +88,7 @@
 			<!--Pivot item one-->
 			
 			<!--Pivot item two-->
-            <phone:PivotItem Header="{Binding Path=LocalizedResources.headerCreated, Source={StaticResource LocalizedStrings}}">
+			<phone:PivotItem Header="{Binding Path=LocalizedResources.headerCreated, Source={StaticResource LocalizedStrings}}">
 				<!--Double line list with image placeholder and text wrapping using a floating header that scrolls with the content-->
 				<phone:LongListSelector x:Name="longlistItinerariesCreated" Margin="0,0,0,0" SelectionChanged="longlistItinerariesCreated_SelectionChanged">
 					
@@ -110,7 +110,7 @@
 				</phone:LongListSelector>
 			</phone:PivotItem>
 			<!--Pivot item three-->
-            <phone:PivotItem Header="{Binding Path=LocalizedResources.headerCustomer, Source={StaticResource LocalizedStrings}}">
+			<phone:PivotItem Header="{Binding Path=LocalizedResources.headerCustomer, Source={StaticResource LocalizedStrings}}">
 				<!--Double line list with image placeholder and text wrapping using a floating header that scrolls with the content-->
 				<phone:LongListSelector x:Name="longlistItinerariesCustomerAccepted" Margin="0,-38,-22,2" SelectionChanged="longlistItinerariesCustomerAccepted_SelectionChanged">
 					
@@ -132,7 +132,7 @@
 				</phone:LongListSelector>
 			</phone:PivotItem>
 			<!--Pivot item four-->
-            <phone:PivotItem Header="{Binding Path=LocalizedResources.headerAccepted, Source={StaticResource LocalizedStrings}}">
+			<phone:PivotItem Header="{Binding Path=LocalizedResources.headerAccepted, Source={StaticResource LocalizedStrings}}">
 				<!--Double line list with image placeholder and text wrapping using a floating header that scrolls with the content-->
 				<phone:LongListSelector x:Name="longlistItinerariesDriverAccepted" Margin="0,-38,-22,2" SelectionChanged="longlistItinerariesDriverAccepted_SelectionChanged" >
 					
@@ -154,7 +154,7 @@
 				</phone:LongListSelector>
 			</phone:PivotItem>
 			<!--Pivot item five-->
-            <phone:PivotItem Header="{Binding Path=LocalizedResources.headerFinished, Source={StaticResource LocalizedStrings}}">
+			<phone:PivotItem Header="{Binding Path=LocalizedResources.headerFinished, Source={StaticResource LocalizedStrings}}">
 				<!--Double line list with image placeholder and text wrapping using a floating header that scrolls with the content-->
 				<phone:LongListSelector x:Name="longlistItinerariesFinished" Margin="0,-38,-22,2" SelectionChanged="longlistItinerariesFinished_SelectionChanged">
 					
