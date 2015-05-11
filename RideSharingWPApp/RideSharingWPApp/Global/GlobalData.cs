@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Windows.Media.Imaging;
 
 namespace RideSharingWPApp.Global
 {
@@ -10,6 +11,9 @@ namespace RideSharingWPApp.Global
     {
         public static ItineraryList itinearyList = new ItineraryList();
         public static Itinerary2 selectedItinerary = new Itinerary2();
+
+        public static VehicleList vehicleList = new VehicleList();
+        public static Vehicle2 selectedVehicle = new Vehicle2();
 
         public static bool isDriver = false;
 
@@ -60,5 +64,43 @@ namespace RideSharingWPApp.Global
     {
         public bool error { get; set; }
         public List<Stat> stats { get; set; }
+    }
+
+    public class Vehicle
+    {
+        public int vehicle_id { get; set; }
+        public int user_id { get; set; }
+        public string type { get; set; }
+        public string license_plate { get; set; }
+        public string reg_certificate { get; set; }
+        public string license_plate_img { get; set; }
+        public string vehicle_img { get; set; }
+        public string motor_insurance_img { get; set; }
+        public int status { get; set; }
+        public string created_at { get; set; }
+    }
+
+    public class Vehicle2
+    {
+        public int vehicle_id { get; set; }
+        public int user_id { get; set; }
+        public string type { get; set; }
+        public string license_plate { get; set; }
+        public string reg_certificate { get; set; }
+        public BitmapImage license_plate_img { get; set; }
+        public BitmapImage vehicle_img { get; set; }
+        public BitmapImage motor_insurance_img { get; set; }
+        public int status { get; set; }
+        public string created_at { get; set; }
+    }
+
+    public class RootVehicle
+    {
+        public bool error { get; set; }
+        public List<Vehicle> vehicles { get; set; }
+    }
+
+    public class VehicleList : List<Vehicle2>{
+
     }
 }

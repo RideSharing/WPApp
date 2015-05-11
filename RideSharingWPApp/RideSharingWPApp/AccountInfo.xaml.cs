@@ -28,6 +28,8 @@ namespace RideSharingWPApp
         protected override void OnNavigatedTo(NavigationEventArgs e)
         {
             base.OnNavigatedTo(e);
+
+            //check is driver
             if (Global.GlobalData.isDriver)
             {
                 Button btnDriverInfo = new Button();

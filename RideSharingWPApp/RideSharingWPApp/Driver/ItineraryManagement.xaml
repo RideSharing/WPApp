@@ -22,7 +22,12 @@
 					x:Name="menuAccountInfo" 
 					Text="Account Info"
 					Click="menuAccountInfo_Click"/>
-				<shell:ApplicationBarMenuItem 
+                <shell:ApplicationBarMenuItem 
+					x:Name="menuVehicleManagement" 
+					Text="Vehical Management"
+					Click="menuVehicleManagement_Click"/>
+
+                <shell:ApplicationBarMenuItem 
 					x:Name="menuSwitchRole" 
 					Text="Switch Role"
 					Click="menuSwitchRole_Click"/>

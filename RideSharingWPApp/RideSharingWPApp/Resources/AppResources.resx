@@ -207,19 +207,19 @@
     <value>Ride Sharing </value>
   </data>
   <data name="licensePlateImg" xml:space="preserve">
-    <value>Lencense plate's photo</value>
+    <value>License plate's photo</value>
   </data>
   <data name="motorInsuranceImg" xml:space="preserve">
     <value>Motor insurance's photo</value>
   </data>
   <data name="vehicleImg" xml:space="preserve">
-    <value>Vehicle photo</value>
+    <value>Vehicle's photo</value>
   </data>
   <data name="vehicleInfor" xml:space="preserve">
-    <value>Vehicle information</value>
+    <value>Vehicle's information</value>
   </data>
   <data name="vehiclePlateNum" xml:space="preserve">
-    <value>Vehicle plate number:</value>
+    <value>Vehicle plate's number:</value>
   </data>
   <data name="vehicleType" xml:space="preserve">
     <value>Vehicle type:</value>
@@ -310,5 +310,14 @@
   </data>
   <data name="headerVehicle" xml:space="preserve">
     <value>Vehicle</value>
+  </data>
+  <data name="btnAddVehicle" xml:space="preserve">
+    <value>Added </value>
+  </data>
+  <data name="txtRegistrationCertificate" xml:space="preserve">
+    <value>Motor registration's certificate</value>
+  </data>
+  <data name="btnUpdate" xml:space="preserve">
+    <value>Update</value>
   </data>
 </root>

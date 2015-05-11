@@ -97,8 +97,8 @@
           <target state="needs-review-translation">Ứng dụng Ride Sharing </target>
           <note from="MultilingualUpdate" annotates="source" priority="2">Please verify the translation’s accuracy as the source string was updated after it was translated.</note></trans-unit>
         <trans-unit id="Resx/vehicleInfor" translate="yes" xml:space="preserve">
-          <source>Vehicle information</source>
-          <target state="translated">Thông tin phương tiện </target>
+          <source>Vehicle's information</source>
+          <target state="needs-review-translation">Thông tin phương tiện </target><note from="MultilingualUpdate" priority="2" annotates="source">Please verify the translation’s accuracy as the source string was updated after it was translated.</note>
         </trans-unit>
         <trans-unit id="Resx/vehicleType" translate="yes" xml:space="preserve">
           <source>Vehicle type:</source>
@@ -164,6 +164,18 @@
           <source>Vehicle</source>
           <target state="new">Vehicle</target>
         </trans-unit>
+        <trans-unit id="Resx/btnAddVehicle" translate="yes" xml:space="preserve">
+          <source>Added </source>
+          <target state="new">Added </target>
+        </trans-unit>
+        <trans-unit id="Resx/txtRegistrationCertificate" translate="yes" xml:space="preserve">
+          <source>Motor registration's certificate</source>
+          <target state="new">Motor registration's certificate</target>
+        </trans-unit>
+        <trans-unit id="Resx/btnUpdate" translate="yes" xml:space="preserve">
+          <source>Update</source>
+          <target state="new">Update</target>
+        </trans-unit>
         <trans-unit id="Resx/txtStartingDay" translate="yes" xml:space="preserve">
           <source>Starting day :</source>
           <target state="needs-review-translation" state-qualifier="mt-suggestion">Bắt đầu từ ngày:</target>
@@ -221,20 +233,20 @@
           <target state="translated">Nhóm tác giả:</target>
         </trans-unit>
         <trans-unit id="Resx/vehiclePlateNum" translate="yes" xml:space="preserve">
-          <source>Vehicle plate number:</source>
-          <target state="translated">Biển số xe :</target>
+          <source>Vehicle plate's number:</source>
+          <target state="needs-review-translation">Biển số xe :</target><note from="MultilingualUpdate" priority="2" annotates="source">Please verify the translation’s accuracy as the source string was updated after it was translated.</note>
         </trans-unit>
         <trans-unit id="Resx/vehicleImg" translate="yes" xml:space="preserve">
-          <source>Vehicle photo</source>
-          <target state="translated">Ảnh chụp phương tiện</target>
+          <source>Vehicle's photo</source>
+          <target state="needs-review-translation">Ảnh chụp phương tiện</target><note from="MultilingualUpdate" priority="2" annotates="source">Please verify the translation’s accuracy as the source string was updated after it was translated.</note>
         </trans-unit>
         <trans-unit id="Resx/motorInsuranceImg" translate="yes" xml:space="preserve">
           <source>Motor insurance's photo</source>
           <target state="translated">Ảnh chụp bảo hiểm dân sự của chủ xe gắn máy</target>
         </trans-unit>
         <trans-unit id="Resx/licensePlateImg" translate="yes" xml:space="preserve">
-          <source>Lencense plate's photo</source>
-          <target state="translated">Ảnh biển số xe</target>
+          <source>License plate's photo</source>
+          <target state="needs-review-translation">Ảnh biển số xe</target><note from="MultilingualUpdate" priority="2" annotates="source">Please verify the translation’s accuracy as the source string was updated after it was translated.</note>
         </trans-unit>
         <trans-unit id="Resx/passwordAlready" translate="yes" xml:space="preserve">
           <source>Have password. Log in now!</source>

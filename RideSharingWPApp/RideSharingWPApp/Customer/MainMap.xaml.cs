@@ -167,7 +167,7 @@ namespace RideSharingWPApp
             Itinerary2 selectedItem = (Itinerary2)longlistItineraries.SelectedItem;
             MessageBox.Show("ss: " + selectedItem.itinerary_id);
             //luu tru tam thoi
-            //Global.GlobalData.selectedItinerary = selectedItem;
+            Global.GlobalData.selectedItinerary = selectedItem;
             //navigate sang details
             NavigationService.Navigate(new Uri("/Customer/ItineraryDetails.xaml", UriKind.Relative));
         }

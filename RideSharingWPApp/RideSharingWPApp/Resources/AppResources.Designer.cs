@@ -97,6 +97,15 @@ namespace RideSharingWPApp.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Added .
+        /// </summary>
+        public static string btnAddVehicle {
+            get {
+                return ResourceManager.GetString("btnAddVehicle", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Change Password.
         /// </summary>
         public static string btnChangePass {
@@ -120,6 +129,15 @@ namespace RideSharingWPApp.Resources {
         public static string btnRegister {
             get {
                 return ResourceManager.GetString("btnRegister", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Update.
+        /// </summary>
+        public static string btnUpdate {
+            get {
+                return ResourceManager.GetString("btnUpdate", resourceCulture);
             }
         }
         
@@ -421,7 +439,7 @@ namespace RideSharingWPApp.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Lencense plate&apos;s photo.
+        ///   Looks up a localized string similar to License plate&apos;s photo.
         /// </summary>
         public static string licensePlateImg {
             get {
@@ -583,6 +601,15 @@ namespace RideSharingWPApp.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Motor registration&apos;s certificate.
+        /// </summary>
+        public static string txtRegistrationCertificate {
+            get {
+                return ResourceManager.GetString("txtRegistrationCertificate", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Starting day :.
         /// </summary>
         public static string txtStartingDay {
@@ -601,7 +628,7 @@ namespace RideSharingWPApp.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Vehicle photo.
+        ///   Looks up a localized string similar to Vehicle&apos;s photo.
         /// </summary>
         public static string vehicleImg {
             get {
@@ -610,7 +637,7 @@ namespace RideSharingWPApp.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Vehicle information.
+        ///   Looks up a localized string similar to Vehicle&apos;s information.
         /// </summary>
         public static string vehicleInfor {
             get {
@@ -619,7 +646,7 @@ namespace RideSharingWPApp.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Vehicle plate number:.
+        ///   Looks up a localized string similar to Vehicle plate&apos;s number:.
         /// </summary>
         public static string vehiclePlateNum {
             get {

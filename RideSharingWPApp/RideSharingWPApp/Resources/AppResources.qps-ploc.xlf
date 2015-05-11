@@ -97,8 +97,8 @@
           <target state="new">Ride Sharing </target>
         </trans-unit>
         <trans-unit id="Resx/vehicleInfor" translate="yes" xml:space="preserve">
-          <source>Vehicle information</source>
-          <target state="new">Vehicle information</target>
+          <source>Vehicle's information</source>
+          <target state="new">Vehicle's information</target>
         </trans-unit>
         <trans-unit id="Resx/vehicleType" translate="yes" xml:space="preserve">
           <source>Vehicle type:</source>
@@ -164,6 +164,18 @@
           <source>Vehicle</source>
           <target state="new">Vehicle</target>
         </trans-unit>
+        <trans-unit id="Resx/btnAddVehicle" translate="yes" xml:space="preserve">
+          <source>Added </source>
+          <target state="new">Added </target>
+        </trans-unit>
+        <trans-unit id="Resx/txtRegistrationCertificate" translate="yes" xml:space="preserve">
+          <source>Motor registration's certificate</source>
+          <target state="new">Motor registration's certificate</target>
+        </trans-unit>
+        <trans-unit id="Resx/btnUpdate" translate="yes" xml:space="preserve">
+          <source>Update</source>
+          <target state="new">Update</target>
+        </trans-unit>
         <trans-unit id="Resx/txtStartingDay" translate="yes" xml:space="preserve">
           <source>Starting day :</source>
           <target state="new">Starting day :</target>
@@ -221,20 +233,20 @@
           <target state="new">Authors:</target>
         </trans-unit>
         <trans-unit id="Resx/vehiclePlateNum" translate="yes" xml:space="preserve">
-          <source>Vehicle plate number:</source>
-          <target state="new">Vehicle plate number:</target>
+          <source>Vehicle plate's number:</source>
+          <target state="new">Vehicle plate's number:</target>
         </trans-unit>
         <trans-unit id="Resx/vehicleImg" translate="yes" xml:space="preserve">
-          <source>Vehicle photo</source>
-          <target state="new">Vehicle photo</target>
+          <source>Vehicle's photo</source>
+          <target state="new">Vehicle's photo</target>
         </trans-unit>
         <trans-unit id="Resx/motorInsuranceImg" translate="yes" xml:space="preserve">
           <source>Motor insurance's photo</source>
           <target state="new">Motor insurance's photo</target>
         </trans-unit>
         <trans-unit id="Resx/licensePlateImg" translate="yes" xml:space="preserve">
-          <source>Lencense plate's photo</source>
-          <target state="new">Lencense plate's photo</target>
+          <source>License plate's photo</source>
+          <target state="new">License plate's photo</target>
         </trans-unit>
         <trans-unit id="Resx/passwordAlready" translate="yes" xml:space="preserve">
           <source>Have password. Log in now!</source>

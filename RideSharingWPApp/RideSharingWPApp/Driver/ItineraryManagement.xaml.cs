@@ -201,6 +201,12 @@ namespace RideSharingWPApp
 
         }
 
+        private void menuVehicleManagement_Click(object sender, EventArgs e)
+        {
+            NavigationService.Navigate(new Uri("/Driver/VehicleManagement.xaml", UriKind.RelativeOrAbsolute));
+          
+        }
+
 
 
     }

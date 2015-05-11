@@ -106,6 +106,9 @@
       <DependentUpon>CustomerReport.xaml</DependentUpon>
     </Compile>
     <Compile Include="DateTimes\DatetimeConvert.cs" />
+    <Compile Include="Driver\AddVehicle.xaml.cs">
+      <DependentUpon>AddVehicle.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Driver\AdvancePostItinerary.xaml.cs">
       <DependentUpon>AdvancePostItinerary.xaml</DependentUpon>
     </Compile>
@@ -214,6 +217,10 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="Customer\CustomerReport.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Driver\AddVehicle.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -359,7 +366,8 @@
     <Content Include="Assets\ic_acc\ic_google+.png" />
     <Content Include="Assets\ic_acc\ic_image2.png" />
     <Content Include="Assets\avatar\ic_personalID.jpg" />
-    <Content Include="Assets\ic_acc\ic_MotorPlate.png" />
+    <Content Include="Assets\ic_acc\ic_motorregister.jpg" />
+    <Content Include="Assets\ic_acc\ic_plate.jpg" />
     <Content Include="Assets\ic_acc\ic_upload.png" />
     <Content Include="Assets\ic_acc\ic_youtube.png" />
     <Content Include="Assets\ic_acc\Personal.png" />
