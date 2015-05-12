@@ -320,4 +320,13 @@
   <data name="btnUpdate" xml:space="preserve">
     <value>Update</value>
   </data>
+  <data name="btnSend" xml:space="preserve">
+    <value>Send</value>
+  </data>
+  <data name="txtComment" xml:space="preserve">
+    <value>Comment:</value>
+  </data>
+  <data name="txtFeedback" xml:space="preserve">
+    <value>Feedback:</value>
+  </data>
 </root>

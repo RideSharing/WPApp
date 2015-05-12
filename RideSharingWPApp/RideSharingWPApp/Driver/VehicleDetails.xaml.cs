@@ -41,7 +41,6 @@ namespace RideSharingWPApp.Driver
             //get photo
             imgVehicle.Source = Global.GlobalData.selectedVehicle.vehicle_img;
             imgLicensePlate.Source = Global.GlobalData.selectedVehicle.license_plate_img;
-           // imgRegistrationCertificate.Source = ImageConvert.ImageConvert.convertBase64ToImage(jsonObject.Value<string>("reg_certificate"));
             imgMotorInsurance.Source = Global.GlobalData.selectedVehicle.motor_insurance_img;
 
         }
@@ -234,6 +233,8 @@ namespace RideSharingWPApp.Driver
 
             txtbVehiclePlateNum.Text = txtbVehiclePlate.Text;
             txtbVehicleType.Text = txtbType.Text;
+            txtbVehicleReg.Text = txtbRegistrationCertificate.Text;
+
             TextBlock b0 = new TextBlock(); b0.Text = "Vehicle type: ";
             TextBlock b1 = new TextBlock(); b1.Text = "Vehicle plate's number: ";
             TextBlock b2 = new TextBlock(); b2.Text = "Register certificate: ";
@@ -283,6 +284,8 @@ namespace RideSharingWPApp.Driver
 
             //add the show method
             messageBox.Show();
+
+            NavigationService.Navigate(new Uri("/Driver/VehicleManagement.xaml", UriKind.RelativeOrAbsolute));
         }
 
        

@@ -8,6 +8,9 @@ using System.Windows.Navigation;
 using Microsoft.Phone.Controls;
 using Microsoft.Phone.Shell;
 using Microsoft.Phone.Tasks;
+using Windows.Web.Http;
+using Newtonsoft.Json.Linq;
+using RideSharingWPApp.Request;
 
 namespace RideSharingWPApp.Driver
 {
@@ -18,6 +21,8 @@ namespace RideSharingWPApp.Driver
         public AddVehicle()
         {
             InitializeComponent();
+
+
         }
 
         private void btnSelectVehicalPhoto_Tap(object sender, System.Windows.Input.GestureEventArgs e)
@@ -96,9 +101,9 @@ namespace RideSharingWPApp.Driver
             }
         }
 
-        
 
-      
+
+
         private void cameraCaptureVehicleTask_Completed(object sender, PhotoResult e)
         {
             if (e.TaskResult == TaskResult.OK)
@@ -170,10 +175,38 @@ namespace RideSharingWPApp.Driver
             }
         }
 
-        private void btnAddNewVehicle_Click(object sender, RoutedEventArgs e)
+        private async void btnAddNewVehicle_Click(object sender, RoutedEventArgs e)
         {
+            Dictionary<string, string> postData = new Dictionary<string, string>();
+            postData.Add("type", txtbType.Text.Trim());
+            postData.Add("license_plate", txtbVehiclePlate.Text.Trim());
+            postData.Add("reg_certificate", txtbRegistrationCertificate.Text.Trim());
+
+            postData.Add("vehicle_img", ImageConvert.ImageConvert.convertImageToBase64(imgVehicle));
+            postData.Add("license_plate_img", ImageConvert.ImageConvert.convertImageToBase64(imgLicensePlate));
+            postData.Add("motor_insurance_img", ImageConvert.ImageConvert.convertImageToBase64(imgMotorInsurance));
+
+            HttpFormUrlEncodedContent content =
+                new HttpFormUrlEncodedContent(postData);
+
+            var result = await RequestToServer.sendPostRequest("vehicle", content);
+
+            JObject jsonObject = JObject.Parse(result);
+            if (jsonObject.Value<bool>("error"))
+            {
+                MessageBox.Show(jsonObject.Value<string>("message"));
+            }
+            else
+            {
+                //Global.GlobalData.isDriver = true;
+                MessageBox.Show(jsonObject.Value<string>("message"));
+                // refresh lai trang
+                NavigationService.Navigate(new Uri("/Driver/VehicleManagement.xaml", UriKind.RelativeOrAbsolute));
+            }
+
+
 
         }
-      
+
     }
 }

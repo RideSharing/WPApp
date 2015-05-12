@@ -18,5 +18,16 @@ namespace RideSharingWPApp
 
             
         }
+
+        private void btnSend_Click(object sender, RoutedEventArgs e)
+        {
+            /*Dictionary<string, string> postData = new Dictionary<string, string>();
+            postData.Add("type", txtbType.Text.Trim());
+
+            HttpFormUrlEncodedContent content =
+                new HttpFormUrlEncodedContent(postData);
+
+            var result = await RequestToServer.sendPostRequest("vehicle", content);*/
+        }
     }
 }

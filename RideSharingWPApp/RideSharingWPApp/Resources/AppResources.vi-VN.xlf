@@ -176,6 +176,18 @@
           <source>Update</source>
           <target state="new">Update</target>
         </trans-unit>
+        <trans-unit id="Resx/btnSend" translate="yes" xml:space="preserve">
+          <source>Send</source>
+          <target state="new">Send</target>
+        </trans-unit>
+        <trans-unit id="Resx/txtFeedback" translate="yes" xml:space="preserve">
+          <source>Feedback:</source>
+          <target state="new">Feedback:</target>
+        </trans-unit>
+        <trans-unit id="Resx/txtComment" translate="yes" xml:space="preserve">
+          <source>Comment:</source>
+          <target state="new">Comment:</target>
+        </trans-unit>
         <trans-unit id="Resx/txtStartingDay" translate="yes" xml:space="preserve">
           <source>Starting day :</source>
           <target state="needs-review-translation" state-qualifier="mt-suggestion">Bắt đầu từ ngày:</target>

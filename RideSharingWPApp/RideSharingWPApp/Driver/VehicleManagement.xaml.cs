@@ -16,7 +16,7 @@ namespace RideSharingWPApp.Driver
     public partial class VehicleManagement : PhoneApplicationPage
     {
         RootVehicle root = null;
-        List<Vehicle> vehicles = new List<Vehicle>();
+        //List<Vehicle> vehicles = new List<Vehicle>();
 
         public VehicleManagement()
         {
@@ -42,6 +42,8 @@ namespace RideSharingWPApp.Driver
             //JArray jsonVal = (JArray)jsonObject.SelectToken("itineraries");
 
             root = JsonConvert.DeserializeObject<RootVehicle>(result);
+
+            GlobalData.vehicleList = new VehicleList();
 
             foreach (Vehicle v in root.vehicles)
             {
@@ -107,6 +109,11 @@ namespace RideSharingWPApp.Driver
             GlobalData.selectedVehicle = selectedItem;
             //navigate sang details
             NavigationService.Navigate(new Uri("/Driver/VehicleDetails.xaml", UriKind.RelativeOrAbsolute));
+        }
+
+        private void menuAddVehicle_Click(object sender, EventArgs e)
+        {
+            NavigationService.Navigate(new Uri("/Driver/AddVehicle.xaml", UriKind.RelativeOrAbsolute));
         }
 
        

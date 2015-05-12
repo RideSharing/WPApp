@@ -177,6 +177,7 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>AppResources.resx</DependentUpon>
     </Compile>
+    <Compile Include="ScheduleReminder\ScheduleReminder.cs" />
     <Compile Include="Tracking.xaml.cs">
       <DependentUpon>Tracking.xaml</DependentUpon>
     </Compile>

@@ -22,6 +22,10 @@
 					Text="Account Info"
 					Click="menuAccountInfo_Click"/>
 				<shell:ApplicationBarMenuItem 
+					x:Name="menuAddVehicle" 
+					Text="Add Vehicle"
+					Click="menuAddVehicle_Click"/>
+				<shell:ApplicationBarMenuItem 
 					x:Name="menuAboutUs" 
 					Text="About Us"
 					Click="menuAboutUs_Click"/>

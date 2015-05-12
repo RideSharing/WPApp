@@ -133,6 +133,15 @@ namespace RideSharingWPApp.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Send.
+        /// </summary>
+        public static string btnSend {
+            get {
+                return ResourceManager.GetString("btnSend", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Update.
         /// </summary>
         public static string btnUpdate {
@@ -538,6 +547,15 @@ namespace RideSharingWPApp.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Comment:.
+        /// </summary>
+        public static string txtComment {
+            get {
+                return ResourceManager.GetString("txtComment", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Cost (VND) :.
         /// </summary>
         public static string txtCost {
@@ -579,6 +597,15 @@ namespace RideSharingWPApp.Resources {
         public static string txtEmail {
             get {
                 return ResourceManager.GetString("txtEmail", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Feedback:.
+        /// </summary>
+        public static string txtFeedback {
+            get {
+                return ResourceManager.GetString("txtFeedback", resourceCulture);
             }
         }
         

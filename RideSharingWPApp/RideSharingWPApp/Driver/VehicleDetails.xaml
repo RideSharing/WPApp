@@ -43,10 +43,6 @@
 				<ColumnDefinition Width="*"/>
 			</Grid.ColumnDefinitions>
 			<Grid Grid.Column="1">
-				<Grid.RowDefinitions>
-					<RowDefinition Height="*"/>
-					<RowDefinition Height="*"/>
-				</Grid.RowDefinitions>
 				<Grid.ColumnDefinitions>
 					<ColumnDefinition Width="*"/>
 					<ColumnDefinition Width="*"/>
@@ -57,25 +53,25 @@
 						   Tap="btnUpdateVehicleInfor_Tap"/>
 				</Button>-->
 				<!-- select-->
-				<Button Grid.Row="0" Grid.Column="0" Width="90" Height="90" BorderThickness="0">
+				<Button Grid.Column="0" Width="90" Height="90" BorderThickness="0">
 					<Image x:Name="btnSelectVehiclePhoto"
 						   Source="/Assets/ic_acc/ic_upload.png"
 						   Tap="btnSelectVehiclePhoto_Tap" />
 				</Button>
 				<!--capture-->
-				<Button Grid.Row="0" Grid.Column="1" Width="90" Height="90" BorderThickness="0">
+				<Button Grid.Column="1" Width="90" Height="90" BorderThickness="0">
 					<Image x:Name="btnCaptureVehiclePhoto"
 						   Source="/Assets/ic_acc/ic_image2.png"
 						   Tap="btnCaptureVehiclePhoto_Tap" />
 				</Button>
 			</Grid>
-			
+
 			<Image x:Name="imgVehicle" Grid.Row="0" VerticalAlignment="Top" Margin="10,10,10,10" Height="150" Width="250">
 				<Image.Source>
 					<BitmapImage/>
 				</Image.Source>
 			</Image>
-			
+
 			<Grid Grid.Row="1">
 				<TextBlock Grid.Column="1" x:Name="txtbVehicleName" Foreground="Black" Text="{Binding Path=LocalizedResources.vehicleImg, Source={StaticResource LocalizedStrings}}" HorizontalAlignment="Center" FontSize="24" FontWeight="Bold"/>
 			</Grid>
@@ -134,19 +130,30 @@
 
 			<ListBoxItem Background="White" Margin="0,0,0,3">
 				<!--Replace rectangle with image-->
-				<StackPanel Orientation="Horizontal" Width="480" Height="150" Margin="0,0,0,0">
-					<Image x:Name="imgLicensePlate" Source="Assets/avatar/ic_personalID.jpg" Height="130" Width="250"  Stretch="Fill" Margin="10,10,10,10"/>
-					<Button Width="90" Height="90" >
-						<Image x:Name="btnSlelectMotorPlate" 
-								   Source="Assets/ic_acc/ic_upload.png"
+				<Grid Width="480" Height="150" Margin="0,0,0,0">
+					<Grid.ColumnDefinitions>
+						<ColumnDefinition Width="2*"/>
+						<ColumnDefinition Width="*"/>
+					</Grid.ColumnDefinitions>
+					<Image x:Name="imgLicensePlate" Grid.Column="0" Source="/Assets/avatar/ic_personalID.jpg" Height="130" Width="250"  Stretch="Fill" Margin="10,10,10,10"/>
+					<Grid Grid.Column="1">
+						<Grid.ColumnDefinitions>
+							<ColumnDefinition Width="*"/>
+							<ColumnDefinition Width="*"/>
+						</Grid.ColumnDefinitions>
+						<Button Grid.Column="0" Width="90" Height="90" >
+							<Image x:Name="btnSlelectMotorPlate" 
+								   Source="/Assets/ic_acc/ic_upload.png"
 								   Tap="btnSlelectMotorPlate_Tap"/>
-					</Button>
-					<!--<Button Width="90" Height="90">
+						</Button>
+						<Button Grid.Column="1" Width="90" Height="90">
 							<Image x:Name="btnCaptureMotoPlate" 
 								   Source="/Assets/ic_acc/ic_image2.png"
 								   Tap="btnCaptureMotoPlate_Tap"/>
-						</Button>-->
-				</StackPanel>
+						</Button>
+					</Grid>
+
+				</Grid>
 			</ListBoxItem>
 
 			<!--Motor's insurance-->
@@ -154,25 +161,34 @@
 				<TextBlock Foreground="Black" Text="{Binding Path=LocalizedResources.motorInsuranceImg, Source={StaticResource LocalizedStrings}}" FontSize="24" FontWeight="Bold"/>
 			</ListBoxItem>
 
-
 			<ListBoxItem Background="White" Margin="0,0,0,3">
-				<StackPanel Orientation="Horizontal" Margin="0,0,0,0" Height="150" Width="480">
-					<!--Replace rectangle with image-->
-					<StackPanel Orientation="Horizontal" Height="150" Width="480" Margin="0,0,0,0">
-						<!--1 picure and 2 button -->
-						<Image x:Name="imgMotorInsurance" Source="Assets/avatar/ic_personalID.jpg" Margin="10,10,10,10" Height="130" Width="250" Stretch="Fill"/>
-						<Button Width="90" Height="90" >
+				<!--Replace rectangle with image-->
+				<Grid Height="150" Width="480" Margin="0,0,0,0">
+					<!--1 picure and 2 button -->
+					<Grid.ColumnDefinitions>
+						<ColumnDefinition Width="2*"/>
+						<ColumnDefinition Width="*"/>
+					</Grid.ColumnDefinitions>
+					<Image Grid.Column="0" x:Name="imgMotorInsurance" Source="/Assets/avatar/ic_personalID.jpg" Margin="10,10,10,10" Height="130" Width="250" Stretch="Fill"/>
+
+					<Grid Grid.Column="1">
+						<Grid.ColumnDefinitions>
+							<ColumnDefinition Width="*"/>
+							<ColumnDefinition Width="*"/>
+						</Grid.ColumnDefinitions>
+						<Button Grid.Column="0" Width="90" Height="90" >
 							<Image x:Name="btnSelectMotorInsuranceImg" 
-								   Source="Assets/ic_acc/ic_upload.png"
+								   Source="/Assets/ic_acc/ic_upload.png"
 								   Tap="btnSelectMotorInsuranceImg_Tap"/>
 						</Button>
-						<Button Width="90" Height="90">
+						<Button Grid.Column="1" Width="90" Height="90">
 							<Image x:Name="btnCaptureMotorInsuranceImg" 
 								   Source="/Assets/ic_acc/ic_image2.png"
 								   Tap="btnCaptureMotorInsuranceImg_Tap"/>
 						</Button>
-					</StackPanel>
-				</StackPanel>
+					</Grid>
+
+				</Grid>
 			</ListBoxItem>
 		</ListBox>
 		<Grid Grid.Row="3" Background="White">
@@ -180,6 +196,6 @@
 		</Grid>
 	</Grid>
 
-	
+
 
 </phone:PhoneApplicationPage>

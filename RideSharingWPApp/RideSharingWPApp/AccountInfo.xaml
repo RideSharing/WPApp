@@ -94,7 +94,7 @@
 					</Border>
 					<StackPanel Width="311" Margin="8,-7,0,0">
 						<TextBlock Text="{Binding Path=LocalizedResources.txtEmail, Source={StaticResource LocalizedStrings}}" Foreground="Blue" TextWrapping="Wrap" Margin="10,0" Style="{StaticResource PhoneTextExtraLargeStyle}" FontSize="{StaticResource PhoneFontSizeLarge}" />
-						<TextBlock x:Name="txtbEmail" Text="{Binding end_address}" Foreground="Black" TextWrapping="Wrap" Margin="10,-2,10,0" Style="{StaticResource PhoneTextSubtleStyle}" />
+						<TextBlock x:Name="txtbEmail" Height="50" Text="{Binding end_address}" Foreground="Black" TextWrapping="Wrap" Margin="10,-2,10,0" Style="{StaticResource PhoneTextSubtleStyle}" FontSize="20"/>
 					</StackPanel>
 				</StackPanel>
 			</ListBoxItem>
@@ -107,7 +107,7 @@
 					</Border>
 					<StackPanel Width="311" Margin="8,-7,0,0">
 						<TextBlock Text="{Binding Path=LocalizedResources.txtPersonalID, Source={StaticResource LocalizedStrings}}" Foreground="Blue" TextWrapping="Wrap" Margin="10,0" Style="{StaticResource PhoneTextExtraLargeStyle}" FontSize="{StaticResource PhoneFontSizeLarge}" />
-						<TextBlock x:Name="txtbPersonalID" Text="{Binding end_address}" Foreground="Black" TextWrapping="Wrap" Margin="10,-2,10,0" Style="{StaticResource PhoneTextSubtleStyle}" />
+						<TextBlock x:Name="txtbPersonalID" Height="50" FontSize="20" Text="{Binding end_address}" Foreground="Black" TextWrapping="Wrap" Margin="10,-2,10,0" Style="{StaticResource PhoneTextSubtleStyle}" />
 					</StackPanel>
 				</StackPanel>
 			</ListBoxItem>
@@ -120,7 +120,7 @@
 					</Border>
 					<StackPanel Width="311" Margin="8,-7,0,0">
 						<TextBlock Text="{Binding Path=LocalizedResources.txtPhone, Source={StaticResource LocalizedStrings}}" Foreground="Blue" TextWrapping="Wrap" Margin="10,0" Style="{StaticResource PhoneTextExtraLargeStyle}" FontSize="{StaticResource PhoneFontSizeLarge}" />
-						<TextBlock x:Name="txtbPhone" Text="{Binding end_address}" Foreground="Black" TextWrapping="Wrap" Margin="10,-2,10,0" Style="{StaticResource PhoneTextSubtleStyle}" />
+						<TextBlock x:Name="txtbPhone" Height="50" Text="{Binding end_address}" Foreground="Black" TextWrapping="Wrap" Margin="10,-2,10,0" Style="{StaticResource PhoneTextSubtleStyle}" FontSize="20" />
 					</StackPanel>
 				</StackPanel>
 			</ListBoxItem>
