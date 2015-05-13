@@ -29,7 +29,7 @@ namespace RideSharingWPApp
             {
                 //check tinh trang hanh trinh
                 //hanh trinh chua ai dang ki
-                if (GlobalData.selectedItinerary.status.Equals(1))
+                if (GlobalData.selectedItinerary.status.Equals(Global.GlobalData.ITINERARY_STATUS_CREATED))
                 {
                     //create button register itinerary
                     Button btnAcceptItinerary = new Button();
@@ -39,7 +39,7 @@ namespace RideSharingWPApp
                     Grid.SetRow(btnAcceptItinerary, 1);
                 }
                 //dang doi driver accept
-                else if (GlobalData.selectedItinerary.status.Equals(2))
+                else if (GlobalData.selectedItinerary.status.Equals(Global.GlobalData.ITINERARY_STATUS_CUSTOMER_ACCEPTED))
                 {
                     //tao trang thai dang doi accept, tao nut huy hanh trinh
                     Button btnCancelItinerary = new Button();
@@ -49,12 +49,23 @@ namespace RideSharingWPApp
                     Grid.SetRow(btnCancelItinerary, 1);
                 }
                 //driver da accepted
-                else if (GlobalData.selectedItinerary.status.Equals(3))
+                else if (GlobalData.selectedItinerary.status.Equals(Global.GlobalData.ITINERARY_STATUS_DRIVER_ACCEPTED))
                 {
                     //tao trang thai da duoc accept, tao nut 
                 }
+                //ongoing
+                else if (GlobalData.selectedItinerary.status.Equals(Global.GlobalData.ITINERARY_STATUS_ONGOING))
+                {
+                    //tao trang thai da duoc accept, tao nut
+                    //create button tracking hanh trinh
+                    Button btnTracking = new Button();
+                    btnTracking.Content = "Tracking";
+                    btnTracking.Click += btnTracking_Click;
+                    gridInfo.Children.Add(btnTracking);
+                    Grid.SetRow(btnTracking, 6);
+                }
                 //hanh trinh da ket thuc
-                else if (GlobalData.selectedItinerary.status.Equals(4))
+                else if (GlobalData.selectedItinerary.status.Equals(Global.GlobalData.ITINERARY_STATUS_FINISHED))
                 {
 
                 }
@@ -103,6 +114,11 @@ namespace RideSharingWPApp
             txtLeaveDay.Text = GlobalData.selectedItinerary.leave_date;
             txtDistance.Text = GlobalData.selectedItinerary.distance.ToString();
             txtDuration.Text = GlobalData.selectedItinerary.duration.ToString();
+        }
+
+        private void btnTracking_Click(object sender, RoutedEventArgs e)
+        {
+            //tracking
         }
 
         private void btnAcceptItinerary_Click(object sender, RoutedEventArgs e)

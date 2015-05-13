@@ -50,7 +50,7 @@
 			<TextBlock x:Name="txtbDriverName"  HorizontalAlignment="Center" FontWeight="Bold"/>
 		</StackPanel>
 		<Grid Grid.Row="4">
-			<toolkit:Rating HorizontalAlignment="Center" Width="300" Height="Auto" x:Name="ratingDriver" RatingItemCount="5" Value="2" Margin="90,10,90,80" Background="#FF3DA5E1" >
+			<toolkit:Rating HorizontalAlignment="Center" Width="300" Height="Auto" x:Name="ratingDriver" RatingItemCount="5" Value="1" Margin="90,10,90,80" Background="#FF3DA5E1" >
 				<toolkit:Rating.FilledItemStyle>
 					<Style TargetType="toolkit:RatingItem">
 						<Setter Property="Background" Value="Yellow" />

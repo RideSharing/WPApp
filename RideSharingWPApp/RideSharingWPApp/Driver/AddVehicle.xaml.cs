@@ -204,8 +204,6 @@ namespace RideSharingWPApp.Driver
                 NavigationService.Navigate(new Uri("/Driver/VehicleManagement.xaml", UriKind.RelativeOrAbsolute));
             }
 
-
-
         }
 
     }

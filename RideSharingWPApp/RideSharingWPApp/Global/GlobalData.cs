@@ -36,6 +36,7 @@ namespace RideSharingWPApp.Global
         public const int ITINERARY_STATUS_CREATED = 1;
         public const int ITINERARY_STATUS_CUSTOMER_ACCEPTED = 2;
         public const int ITINERARY_STATUS_DRIVER_ACCEPTED = 3;
+        public const int ITINERARY_STATUS_ONGOING = 5;
         public const int ITINERARY_STATUS_FINISHED = 4;
 
 

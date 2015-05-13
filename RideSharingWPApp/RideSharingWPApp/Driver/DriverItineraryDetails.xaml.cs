@@ -78,7 +78,25 @@ namespace RideSharingWPApp.Driver
             //driver da accepted
             else if (GlobalData.selectedItinerary.status.Equals(Global.GlobalData.ITINERARY_STATUS_DRIVER_ACCEPTED))
             {
-                // 
+                //
+                //create button start hanh trinh
+                Button btnStart = new Button();
+                btnStart.Content = "Start";
+                btnStart.Click += btnStart_Click;
+                gridInfo.Children.Add(btnStart);
+                Grid.SetRow(btnStart, 6);
+            }
+            //ongoing
+            else if (GlobalData.selectedItinerary.status.Equals(Global.GlobalData.ITINERARY_STATUS_ONGOING))
+            {
+                //create button tracking hanh trinh
+                Button btnTracking = new Button();
+                btnTracking.Content = "Tracking";
+                btnTracking.Click += btnTracking_Click;
+                gridInfo.Children.Add(btnTracking);
+                Grid.SetRow(btnTracking, 6);
+
+                //btn Finish
             }
             //hanh trinh da ket thuc
             else if (GlobalData.selectedItinerary.status.Equals(Global.GlobalData.ITINERARY_STATUS_FINISHED))
@@ -130,6 +148,11 @@ namespace RideSharingWPApp.Driver
 
             //datePicker.Value = GlobalData.selectedItinerary.da
 
+        }
+
+        void btnTracking_Click(object sender, RoutedEventArgs e)
+        {
+            throw new NotImplementedException();
         }
 
         void routeQuery_QueryCompleted(object sender, QueryCompletedEventArgs<Route> e)
