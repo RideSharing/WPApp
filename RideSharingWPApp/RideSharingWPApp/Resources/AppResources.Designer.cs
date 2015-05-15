@@ -547,6 +547,15 @@ namespace RideSharingWPApp.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Vehicle ID:.
+        /// </summary>
+        public static string txtbVehicleID {
+            get {
+                return ResourceManager.GetString("txtbVehicleID", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Comment:.
         /// </summary>
         public static string txtComment {

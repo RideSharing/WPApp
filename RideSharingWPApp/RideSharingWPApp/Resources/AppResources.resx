@@ -329,4 +329,7 @@
   <data name="txtFeedback" xml:space="preserve">
     <value>Feedback:</value>
   </data>
+  <data name="txtbVehicleID" xml:space="preserve">
+    <value>Vehicle ID:</value>
+  </data>
 </root>

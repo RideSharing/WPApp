@@ -26,6 +26,7 @@
             <RowDefinition Height="*"/>
             <RowDefinition Height="*"/>
             <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
 
         </Grid.RowDefinitions>
 
@@ -97,12 +98,19 @@
                  Grid.Row="7" TextWrapping="Wrap" 
                  Hint="{Binding Path=LocalizedResources.hintCost, Source={StaticResource LocalizedStrings}}" VerticalAlignment="Center" 
                  Background="{StaticResource PhoneTextBoxSelectionForegroundBrush}"/>
+        <toolkit:PhoneTextBox x:Name="txtbVehicleID" Width="480" Height="72"
+                 HorizontalAlignment="Center" 
+                 Margin="0,0,0,0" 
+                 Grid.Row="8" TextWrapping="Wrap" 
+                 Hint="{Binding Path=LocalizedResources.txtbVehicleID, Source={StaticResource LocalizedStrings}}" VerticalAlignment="Center" 
+                 Background="{StaticResource PhoneTextBoxSelectionForegroundBrush}"/>
+
 
         <Button x:Name="btnRegister"
             Height="70" 
             Content="{Binding Path=LocalizedResources.btnRegister, Source={StaticResource LocalizedStrings}}" 
             HorizontalAlignment="Center" 
-            Margin="0,0,0,0" Grid.Row="8" 
+            Margin="0,0,0,0" Grid.Row="9" 
             VerticalAlignment="Top" 
             Width="480" 
             Background="#FF2D90F5" BorderThickness="0" Click="btnRegister_Click"/>

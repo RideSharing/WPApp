@@ -60,6 +60,7 @@ namespace RideSharingWPApp
             postData.Add("end_address", txtbEnd.Text.Trim());
             postData.Add("description", txtbDescription.Text.Trim());
             postData.Add("cost", txtbCost.Text.Trim());
+            postData.Add("vehicle_id", txtbVehicleID.Text.Trim());
             postData.Add("distance", txtbDistance.Text.Trim());
             postData.Add("start_address_lat", start_lat.Trim());
             postData.Add("start_address_long", start_long.Trim());

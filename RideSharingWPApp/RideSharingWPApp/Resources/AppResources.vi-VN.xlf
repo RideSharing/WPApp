@@ -184,6 +184,10 @@
           <source>Feedback:</source>
           <target state="new">Feedback:</target>
         </trans-unit>
+        <trans-unit id="Resx/txtbVehicleID" translate="yes" xml:space="preserve">
+          <source>Vehicle ID:</source>
+          <target state="new">Vehicle ID:</target>
+        </trans-unit>
         <trans-unit id="Resx/txtComment" translate="yes" xml:space="preserve">
           <source>Comment:</source>
           <target state="new">Comment:</target>

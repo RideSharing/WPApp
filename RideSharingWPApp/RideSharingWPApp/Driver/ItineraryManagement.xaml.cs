@@ -9,6 +9,8 @@ using Microsoft.Phone.Controls;
 using Microsoft.Phone.Shell;
 using Newtonsoft.Json;
 using Windows.Web.Http;
+using RideSharingWPApp.Request;
+using Newtonsoft.Json.Linq;
 
 namespace RideSharingWPApp
 {
@@ -198,7 +200,9 @@ namespace RideSharingWPApp
 
         private void menuSwitchRole_Click(object sender, EventArgs e)
         {
-
+            //Driver switch the role to customer
+          
+          
         }
 
         private void menuVehicleManagement_Click(object sender, EventArgs e)
